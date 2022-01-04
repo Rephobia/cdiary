@@ -1,0 +1,30 @@
+{
+  "name": "cdiary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "webpack",
+      "serve": "webpack serve"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rephobia/cdiary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Rephobia/cdiary/issues"
+  },
+  "homepage": "https://github.com/Rephobia/cdiary#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
+  }
+}
