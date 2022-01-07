@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+    nodejs:
+        image: node:17-alpine
+        container_name: cdiary_nodejs
+        working_dir: /var/www/
+        volumes:
+            - .:/var/www/
