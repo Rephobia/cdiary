@@ -7,8 +7,11 @@ ifneq (,$(wildcard ./.env))
     export
 endif
 
-npm-install: ## install npm
+install: ## install npm
 	docker-compose run --rm nodejs npm install
+
+build: ## run npm build script
+	docker-compose run --rm nodejs npm run build
 
 help: ## command list
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
