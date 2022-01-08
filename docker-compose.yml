@@ -18,3 +18,12 @@ services:
             - ./:/var/www
             - ./docker/nginx/conf.d:/etc/nginx/conf.d
             - ./docker/var/log/nginx:/var/log/nginx
+        networks:
+            default:
+                ipv4_address: 10.0.100.0
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 10.0.100.0/8
