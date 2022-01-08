@@ -2,8 +2,7 @@
 /dist
 /.env
 
-# Prerequisites
-*.d
+/docker/var
 
 # Compiled Object files
 *.slo

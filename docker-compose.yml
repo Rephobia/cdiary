@@ -7,3 +7,14 @@ services:
         working_dir: /var/www/
         volumes:
             - .:/var/www/
+
+    webserver:
+        image: nginx:alpine
+        container_name: cdiary_webserver
+        restart: unless-stopped
+        ports:
+            - "80:80"
+        volumes:
+            - ./:/var/www
+            - ./docker/nginx/conf.d:/etc/nginx/conf.d
+            - ./docker/var/log/nginx:/var/log/nginx
